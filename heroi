@@ -1,0 +1,42 @@
+let personagem = "Pikachu"
+let xp = 5555
+
+while((personagem)&&(xp)){
+  console.log("Podera Ser realizado o Teste Com sucesso")
+  break
+}
+
+switch(true){
+  case xp <100:
+  console.log("O heroi de nome "+personagem+ " Esta no Nivel ferro")
+  break
+
+  case xp >=1001 && xp <=2000 :
+  console.log("O heroi de nome "+personagem+ " Esta no Nivel Bronze")
+  break
+
+  case xp >=2001 && xp <=5000 :
+  console.log("O heroi de nome "+personagem+ " Esta no Nivel Prata")
+  break
+
+  case xp >=5001 && xp <=7000 :
+  console.log("O heroi de nome "+personagem+ " Esta no Nivel Ouro")
+  break
+
+  case xp >=7001 && xp <=8000 :
+  console.log("O heroi de nome "+personagem+ " Esta no Nivel Platina")
+  break
+
+  case xp >=8001 && xp <=9000 :
+  console.log("O heroi de nome "+personagem+ " Esta no Nivel Ascedente")
+  break
+
+  case xp >=9001 && xp <=10000 :
+  console.log("O heroi de nome "+personagem + " Esta no Nivel Imortal")
+  break
+
+  case xp > 10000 :
+  console.log("O heroi de nome "+personagem + " Esta no Nivel Radiante")
+  break
+
+}
