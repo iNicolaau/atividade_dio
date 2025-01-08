@@ -1,0 +1,51 @@
+//Calculadora De Rank De Partidas Rankeadas
+victory(43, 21);
+
+function victory(vitoria, derrota) {
+  let soma = vitoria - derrota;
+
+  switch (true) {
+    case soma < 10:
+      console.log(
+        'O Herói tem de saldo ' + soma + ' Vitórias e esta no nível Ferro'
+      );
+      break;
+
+    case soma >= 11 && soma <= 20:
+      console.log(
+        'O Herói tem de saldo ' + soma + ' Vitórias e esta no nível Bronze'
+      );
+      break;
+
+    case soma >= 21 && soma <= 50:
+      console.log(
+        'O Herói tem de saldo ' + soma + ' Vitórias e esta no nível Prata'
+      );
+      break;
+
+    case soma >= 51 && soma <= 80:
+      console.log(
+        'O Herói tem de saldo ' + soma + ' Vitórias e esta no nível Ouro'
+      );
+      break;
+
+    case soma >= 81 && soma <= 90:
+      console.log(
+        'O Herói tem de saldo ' + soma + ' Vitórias e esta no nível Diamante'
+      );
+      break;
+
+    case soma >= 91 && soma <= 100:
+      console.log(
+        'O Herói tem de saldo ' + soma + ' Vitórias e esta no nível Lendario'
+      );
+      break;
+
+    case soma > 101:
+      console.log(
+        'O Herói tem de saldo ' + soma + ' Vitórias e esta no nível Imortal'
+      );
+      break;
+  }
+  return soma;
+}
